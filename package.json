@@ -4,6 +4,7 @@
   "description": "bare bones for a react project",
   "main": "index.js",
   "scripts": {
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/jdcarroll/react-skeleton/issues"
   },
-  "homepage": "https://github.com/jdcarroll/react-skeleton#readme"
+  "homepage": "https://github.com/jdcarroll/react-skeleton#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "watchify": "^3.7.0"
+  }
 }
